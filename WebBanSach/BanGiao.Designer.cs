@@ -257,7 +257,7 @@ namespace WebBanSach
             this.Label3.Name = "Label3";
             this.Label3.Size = new System.Drawing.Size(520, 42);
             this.Label3.TabIndex = 62;
-            this.Label3.Text = "BÀN GIAO THUỐC CHO CÁC PHÒNG";
+            this.Label3.Text = "BÀN GIAO SÁCH CHO CÁC PHÒNG";
             // 
             // BanGiao
             // 

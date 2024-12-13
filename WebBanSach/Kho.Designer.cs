@@ -49,6 +49,7 @@ namespace WebBanSach
             this.Label2 = new System.Windows.Forms.Label();
             this.MenuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menu3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DataGrid1)).BeginInit();
             this.MenuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -273,11 +274,23 @@ namespace WebBanSach
             this.menu3.Size = new System.Drawing.Size(217, 34);
             this.menu3.Text = "Nhập sách vào kho";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(362, 50);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(359, 29);
+            this.label1.TabIndex = 99;
+            this.label1.Text = "NHẬP SÁCH VÀO KHO HÀNG";
+            // 
             // Kho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1130, 786);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.MenuStrip1);
             this.Controls.Add(this.Button7);
             this.Controls.Add(this.Button6);
@@ -330,5 +343,6 @@ namespace WebBanSach
         internal System.Windows.Forms.Label Label2;
         internal System.Windows.Forms.MenuStrip MenuStrip1;
         internal System.Windows.Forms.ToolStripMenuItem menu3;
+        private System.Windows.Forms.Label label1;
     }
 }
