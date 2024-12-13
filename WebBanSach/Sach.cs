@@ -38,15 +38,9 @@ namespace WebBanSach
 
                             dt.TableName = "ThongTinSach"; // Đặt tên bảng
 
-                            if (dt.Rows.Count > 0)
-                            {
-                                string filePath = "ThongTinSach.xml";
-                                dt.WriteXml(filePath, XmlWriteMode.WriteSchema);
-                            }
-                            else
-                            {
-                                MessageBox.Show("Không có dữ liệu từ bảng ThongTinSach.");
-                            }
+                            // Lưu vào XML
+                            string filePath = "ThongTinSach.xml";
+                            dt.WriteXml(filePath, XmlWriteMode.WriteSchema);
                         }
                     }
                 }
@@ -64,7 +58,7 @@ namespace WebBanSach
                 if (System.IO.File.Exists("ThongTinSach.xml"))
                 {
                     DataTable dt = new DataTable();
-                    dt.ReadXml("ThongTinSach.xml");
+                    dt.ReadXml("ThongTinSach.xml");  // Đọc dữ liệu từ file XML
                     TableSach.DataSource = dt;
                 }
                 else
@@ -77,6 +71,7 @@ namespace WebBanSach
                 MessageBox.Show("Lỗi: " + ex.Message);
             }
         }
+
 
         private void AddIntoSQL(string maSach, string tenSach, string tacGia, string nhaXuatBan, int namXuatBan, int gia, string maNhomSach)
         {
@@ -125,16 +120,20 @@ namespace WebBanSach
                 newRow["maNhomSach"] = maNhomSach;
 
                 dt.Rows.Add(newRow);
-
-                dt.WriteXml("ThongTinSach.xml");
-
                 TableSach.DataSource = dt;
+
+                // Lưu lại vào XML
+                dt.WriteXml("ThongTinSach.xml", XmlWriteMode.WriteSchema);
+
+                // Thêm dữ liệu vào SQL
+                AddIntoSQL(maSach, tenSach, tacGia, nhaXuatBan, namXuatBan, gia, maNhomSach);
             }
             else
             {
                 MessageBox.Show("Không thể thêm dữ liệu vì DataTable chưa được khởi tạo.");
             }
         }
+
 
         private void UpdateSQL(string maSach, string tenSach, string tacGia, string nhaXuatBan, int namXuatBan, int gia, string maNhomSach)
         {
@@ -143,7 +142,8 @@ namespace WebBanSach
             {
                 conn.Open();
 
-                string query = "UPDATE ThongTinSach SET tenSach = @tenSach, tacGia = @tacGia, nhaXuatBan = @nhaXuatBan, namXuatBan = @namXuatBan, gia = @gia, maNhomSach = @maNhomSach WHERE maSach = @maSach";
+                string query = "UPDATE ThongTinSach SET tenSach = @tenSach, tacGia = @tacGia, nhaXuatBan = @nhaXuatBan, " +
+                               "namXuatBan = @namXuatBan, gia = @gia, maNhomSach = @maNhomSach WHERE maSach = @maSach";
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@maSach", maSach);
@@ -156,8 +156,12 @@ namespace WebBanSach
 
                     cmd.ExecuteNonQuery();
                 }
+
+                // Sau khi cập nhật dữ liệu vào SQL, gọi lại phương thức lưu XML để cập nhật dữ liệu mới
+                SaveDataToXML();
             }
         }
+
 
         private void DeleteSQL(string maSach)
         {
@@ -172,8 +176,12 @@ namespace WebBanSach
                     cmd.Parameters.AddWithValue("@maSach", maSach);
                     cmd.ExecuteNonQuery();
                 }
+              
+                // Sau khi xóa dữ liệu từ SQL, gọi lại phương thức lưu XML để cập nhật dữ liệu mới
+                SaveDataToXML();
             }
         }
+
 
 
 

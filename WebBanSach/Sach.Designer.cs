@@ -43,7 +43,6 @@ namespace WebBanSach
             this.GroupBox1 = new System.Windows.Forms.GroupBox();
             this.NhaXuatBan = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.NamXuatBan = new System.Windows.Forms.DateTimePicker();
             this.GiaBan = new System.Windows.Forms.TextBox();
             this.TacGia = new System.Windows.Forms.TextBox();
             this.MaSach = new System.Windows.Forms.TextBox();
@@ -56,6 +55,7 @@ namespace WebBanSach
             this.Label4 = new System.Windows.Forms.Label();
             this.Label3 = new System.Windows.Forms.Label();
             this.Label1 = new System.Windows.Forms.Label();
+            this.NamXuatBan = new System.Windows.Forms.TextBox();
             this.MenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TableSach)).BeginInit();
             this.GroupBox1.SuspendLayout();
@@ -185,9 +185,9 @@ namespace WebBanSach
             // GroupBox1
             // 
             this.GroupBox1.BackColor = System.Drawing.Color.LightCyan;
+            this.GroupBox1.Controls.Add(this.NamXuatBan);
             this.GroupBox1.Controls.Add(this.NhaXuatBan);
             this.GroupBox1.Controls.Add(this.label2);
-            this.GroupBox1.Controls.Add(this.NamXuatBan);
             this.GroupBox1.Controls.Add(this.GiaBan);
             this.GroupBox1.Controls.Add(this.TacGia);
             this.GroupBox1.Controls.Add(this.MaSach);
@@ -224,14 +224,6 @@ namespace WebBanSach
             this.label2.Size = new System.Drawing.Size(125, 29);
             this.label2.TabIndex = 7;
             this.label2.Text = "Nhà xuất bản";
-            // 
-            // NamXuatBan
-            // 
-            this.NamXuatBan.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.NamXuatBan.Location = new System.Drawing.Point(415, 47);
-            this.NamXuatBan.Name = "NamXuatBan";
-            this.NamXuatBan.Size = new System.Drawing.Size(147, 22);
-            this.NamXuatBan.TabIndex = 6;
             // 
             // GiaBan
             // 
@@ -329,6 +321,13 @@ namespace WebBanSach
             this.Label1.TabIndex = 67;
             this.Label1.Text = "NHẬP THÔNG TIN SÁCH";
             // 
+            // NamXuatBan
+            // 
+            this.NamXuatBan.Location = new System.Drawing.Point(415, 43);
+            this.NamXuatBan.Name = "NamXuatBan";
+            this.NamXuatBan.Size = new System.Drawing.Size(142, 22);
+            this.NamXuatBan.TabIndex = 9;
+            // 
             // Sach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -368,7 +367,6 @@ namespace WebBanSach
         internal System.Windows.Forms.Button Xoa;
         internal System.Windows.Forms.Button Them;
         internal System.Windows.Forms.GroupBox GroupBox1;
-        internal System.Windows.Forms.DateTimePicker NamXuatBan;
         internal System.Windows.Forms.TextBox GiaBan;
         internal System.Windows.Forms.TextBox TacGia;
         internal System.Windows.Forms.TextBox MaSach;
@@ -383,5 +381,6 @@ namespace WebBanSach
         internal System.Windows.Forms.Label Label1;
         internal System.Windows.Forms.TextBox NhaXuatBan;
         internal System.Windows.Forms.Label label2;
+        internal System.Windows.Forms.TextBox NamXuatBan;
     }
 }
