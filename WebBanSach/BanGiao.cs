@@ -16,5 +16,10 @@ namespace WebBanSach
         {
             InitializeComponent();
         }
+
+        private void menu4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

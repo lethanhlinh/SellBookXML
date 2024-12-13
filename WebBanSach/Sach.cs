@@ -18,12 +18,13 @@ namespace WebBanSach
             InitializeComponent();
             SaveDataToXML();
             LoadDataFromXML();
+            TableSach.CellClick += TableSach_CellClick;
         }
         private void SaveDataToXML()
         {
             try
             {
-                string connString = "Data Source=ADMIN-PC;Initial Catalog=qlSachCuaHang;Integrated Security=True;";
+                string connString = "Data Source=quancutee\\QUANCUTEE;Initial Catalog=qlSachCuaHang;Integrated Security=True;";
                 using (SqlConnection conn = new SqlConnection(connString))
                 {
                     conn.Open();
@@ -75,7 +76,7 @@ namespace WebBanSach
 
         private void AddIntoSQL(string maSach, string tenSach, string tacGia, string nhaXuatBan, int namXuatBan, int gia, string maNhomSach)
         {
-            string connString = "Data Source=ADMIN-PC;Initial Catalog=qlSachCuaHang;Integrated Security=True;";
+            string connString = "Data Source=quancutee\\QUANCUTEE;Initial Catalog=qlSachCuaHang;Integrated Security=True;";
             using (SqlConnection conn = new SqlConnection(connString))
             {
                 conn.Open();
@@ -137,7 +138,7 @@ namespace WebBanSach
 
         private void UpdateSQL(string maSach, string tenSach, string tacGia, string nhaXuatBan, int namXuatBan, int gia, string maNhomSach)
         {
-            string connString = "Data Source=ADMIN-PC;Initial Catalog=qlSachCuaHang;Integrated Security=True;";
+            string connString = "Data Source=quancutee\\QUANCUTEE;Initial Catalog=qlSachCuaHang;Integrated Security=True;";
             using (SqlConnection conn = new SqlConnection(connString))
             {
                 conn.Open();
@@ -165,7 +166,7 @@ namespace WebBanSach
 
         private void DeleteSQL(string maSach)
         {
-            string connString = "Data Source=ADMIN-PC;Initial Catalog=qlSachCuaHang;Integrated Security=True;";
+            string connString = "Data Source=quancutee\\QUANCUTEE;Initial Catalog=qlSachCuaHang;Integrated Security=True;";
             using (SqlConnection conn = new SqlConnection(connString))
             {
                 conn.Open();
@@ -283,6 +284,36 @@ namespace WebBanSach
             {
                 MessageBox.Show("Lỗi: " + ex.Message);
             }
+        }
+        private void TableSach_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                // Kiểm tra xem người dùng có bấm vào một ô hợp lệ không
+                if (e.RowIndex >= 0) // `RowIndex` >= 0 nghĩa là không phải tiêu đề
+                {
+                    // Lấy hàng được chọn
+                    DataGridViewRow selectedRow = TableSach.Rows[e.RowIndex];
+
+                    // Gán dữ liệu từ hàng vào các TextBox
+                    MaSach.Text = selectedRow.Cells["maSach"].Value?.ToString() ?? "";
+                    TenSach.Text = selectedRow.Cells["tenSach"].Value?.ToString() ?? "";
+                    TacGia.Text = selectedRow.Cells["tacGia"].Value?.ToString() ?? "";
+                    NhaXuatBan.Text = selectedRow.Cells["nhaXuatBan"].Value?.ToString() ?? "";
+                    NamXuatBan.Text = selectedRow.Cells["namXuatBan"].Value?.ToString() ?? "";
+                    GiaBan.Text = selectedRow.Cells["gia"].Value?.ToString() ?? "";
+                    MaNhomSach.Text = selectedRow.Cells["maNhomSach"].Value?.ToString() ?? "";
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi lấy dữ liệu từ bảng: " + ex.Message);
+            }
+        }
+
+        private void menu2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

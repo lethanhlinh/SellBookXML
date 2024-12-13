@@ -23,5 +23,19 @@ namespace WebBanSach
             sach.Show();
             this.Hide();
         }
+
+        private void menu1_Click(object sender, EventArgs e)
+        {
+            NhanVien nv = new NhanVien();
+            nv.Show();
+            this.Hide();
+        }
+
+        private void menu3_Click(object sender, EventArgs e)
+        {
+            Kho Form3 = new Kho();
+            Form3.Show();
+            this.Hide();
+        }
     }
 }

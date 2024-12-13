@@ -36,7 +36,7 @@ namespace WebBanSach
         {
             try
             {
-                string connString = "Data Source=ADMIN-PC;Initial Catalog=qlSachCuaHang;Integrated Security=True;";
+                string connString = "Data Source=quancutee\\QUANCUTEE;Initial Catalog=qlSachCuaHang;Integrated Security=True;";
                 using (SqlConnection conn = new SqlConnection(connString))
                 {
                     conn.Open();
@@ -88,7 +88,7 @@ namespace WebBanSach
 
         private void AddIntoSQL(string maNV, string tenNV, string gioiTinh, string tenCV)
         {
-            string connString = "Data Source=ADMIN-PC;Initial Catalog=qlSachCuaHang;Integrated Security=True;";
+            string connString = "Data Source=quancutee\\QUANCUTEE;Initial Catalog=qlSachCuaHang;Integrated Security=True;";
             using (SqlConnection conn = new SqlConnection(connString))
             {
                 conn.Open();
@@ -153,7 +153,7 @@ namespace WebBanSach
         {
             try
             {
-                string connString = "Data Source=ADMIN-PC;Initial Catalog=qlSachCuaHang;Integrated Security=True;";
+                string connString = "Data Source=quancutee\\QUANCUTEE;Initial Catalog=qlSachCuaHang;Integrated Security=True;";
                 using (SqlConnection conn = new SqlConnection(connString))
                 {
                     conn.Open();
@@ -186,27 +186,34 @@ namespace WebBanSach
 
         private void TableNV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.RowIndex >= 0) // Kiểm tra chỉ số hàng hợp lệ
+            {
+                // Lấy dòng được click
+                DataGridViewRow selectedRow = TableNV.Rows[e.RowIndex];
 
+                // Đổ dữ liệu vào các TextBox
+                MaNV.Text = selectedRow.Cells["maNV"].Value?.ToString();
+                TenNV.Text = selectedRow.Cells["tenNV"].Value?.ToString();
+                RadioButton1.Checked = selectedRow.Cells["gioiTinh"].Value?.ToString() == "Nam";
+                RadioButton2.Checked = selectedRow.Cells["gioiTinh"].Value?.ToString() == "Nữ";
+                RadioButton3.Checked = selectedRow.Cells["tenCV"].Value?.ToString() == "Thu ngân";
+                RadioButton4.Checked = selectedRow.Cells["tenCV"].Value?.ToString() == "Quản lí";
+            }
         }
         private void TableNV_SelectionChanged_1(object sender, EventArgs e)
         {
-            try
+            if (TableNV.SelectedRows.Count > 0)
             {
-                if (TableNV.SelectedRows.Count > 0)
-                {
-                    DataGridViewRow selectedRow = TableNV.SelectedRows[0];
+                // Lấy dòng được chọn
+                DataGridViewRow selectedRow = TableNV.SelectedRows[0];
 
-                    MaNV.Text = selectedRow.Cells["maNV"].Value?.ToString() ?? "";
-                    TenNV.Text = selectedRow.Cells["tenNV"].Value?.ToString() ?? "";
-                    RadioButton1.Checked = selectedRow.Cells["gioiTinh"].Value?.ToString() == "Nam";
-                    RadioButton2.Checked = selectedRow.Cells["gioiTinh"].Value?.ToString() == "Nữ";
-                    RadioButton3.Checked = selectedRow.Cells["tenCV"].Value?.ToString() == "Thu ngân";
-                    RadioButton4.Checked = selectedRow.Cells["tenCV"].Value?.ToString() == "Quản lí";
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Lỗi: " + ex.Message);
+                // Đổ dữ liệu vào các TextBox
+                MaNV.Text = selectedRow.Cells["maNV"].Value?.ToString();
+                TenNV.Text = selectedRow.Cells["tenNV"].Value?.ToString();
+                RadioButton1.Checked = selectedRow.Cells["gioiTinh"].Value?.ToString() == "Nam";
+                RadioButton2.Checked = selectedRow.Cells["gioiTinh"].Value?.ToString() == "Nữ";
+                RadioButton3.Checked = selectedRow.Cells["tenCV"].Value?.ToString() == "Thu ngân";
+                RadioButton4.Checked = selectedRow.Cells["tenCV"].Value?.ToString() == "Quản lí";
             }
         }
 
@@ -260,7 +267,7 @@ namespace WebBanSach
                     TableNV.DataSource = dt;
 
                     // Xóa nhân viên khỏi cơ sở dữ liệu
-                    string connString = "Data Source=ADMIN-PC;Initial Catalog=qlSachCuaHang;Integrated Security=True;Encrypt=True;";
+                    string connString = "Data Source=quancutee\\QUANCUTEE;Initial Catalog=qlSachCuaHang;Integrated Security=True;Encrypt=True;";
                     using (SqlConnection conn = new SqlConnection(connString))
                     {
                         conn.Open();
@@ -338,6 +345,15 @@ namespace WebBanSach
                 MessageBox.Show("Lỗi: " + ex.Message);
             }
         
-    }
+        }
+
+        private void NhanVien_Load(object sender, EventArgs e)
+        {
+            foreach (DataGridViewColumn column in TableNV.Columns)
+            {
+                Console.WriteLine(column.Name);
+            }
+
+        }
     }
 }

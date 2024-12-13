@@ -31,10 +31,6 @@ namespace WebBanSach
         {
             this.MenuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menu1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.menu2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.menu3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.menu4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.TìmKiếmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.PictureBox1 = new System.Windows.Forms.PictureBox();
             this.TableNV = new System.Windows.Forms.DataGridView();
             this.Sua = new System.Windows.Forms.Button();
@@ -66,17 +62,14 @@ namespace WebBanSach
             // MenuStrip1
             // 
             this.MenuStrip1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MenuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.MenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.MenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menu1,
-            this.menu2,
-            this.menu3,
-            this.menu4,
-            this.TìmKiếmToolStripMenuItem});
+            this.menu1});
             this.MenuStrip1.Location = new System.Drawing.Point(0, 0);
             this.MenuStrip1.Name = "MenuStrip1";
-            this.MenuStrip1.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
-            this.MenuStrip1.Size = new System.Drawing.Size(943, 31);
+            this.MenuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.MenuStrip1.Size = new System.Drawing.Size(1061, 38);
             this.MenuStrip1.TabIndex = 100;
             this.MenuStrip1.Text = "MenuStrip1";
             // 
@@ -85,44 +78,15 @@ namespace WebBanSach
             this.menu1.BackColor = System.Drawing.Color.PaleTurquoise;
             this.menu1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menu1.Name = "menu1";
-            this.menu1.Size = new System.Drawing.Size(184, 27);
+            this.menu1.Size = new System.Drawing.Size(229, 34);
             this.menu1.Text = "Thông tin nhân viên";
-            // 
-            // menu2
-            // 
-            this.menu2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menu2.Name = "menu2";
-            this.menu2.Size = new System.Drawing.Size(141, 27);
-            this.menu2.Text = "Thông tin sách";
-            // 
-            // menu3
-            // 
-            this.menu3.BackColor = System.Drawing.Color.White;
-            this.menu3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menu3.Name = "menu3";
-            this.menu3.Size = new System.Drawing.Size(185, 27);
-            this.menu3.Text = "Nhập thuốc vào kho";
-            // 
-            // menu4
-            // 
-            this.menu4.BackColor = System.Drawing.Color.White;
-            this.menu4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menu4.Name = "menu4";
-            this.menu4.Size = new System.Drawing.Size(144, 27);
-            this.menu4.Text = "Bàn giao thuốc";
-            // 
-            // TìmKiếmToolStripMenuItem
-            // 
-            this.TìmKiếmToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TìmKiếmToolStripMenuItem.Name = "TìmKiếmToolStripMenuItem";
-            this.TìmKiếmToolStripMenuItem.Size = new System.Drawing.Size(100, 27);
-            this.TìmKiếmToolStripMenuItem.Text = "Tìm kiếm";
             // 
             // PictureBox1
             // 
-            this.PictureBox1.Location = new System.Drawing.Point(182, 113);
+            this.PictureBox1.Location = new System.Drawing.Point(205, 141);
+            this.PictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.PictureBox1.Name = "PictureBox1";
-            this.PictureBox1.Size = new System.Drawing.Size(287, 231);
+            this.PictureBox1.Size = new System.Drawing.Size(323, 289);
             this.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PictureBox1.TabIndex = 99;
             this.PictureBox1.TabStop = false;
@@ -133,11 +97,12 @@ namespace WebBanSach
             this.TableNV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.TableNV.BackgroundColor = System.Drawing.Color.LightCyan;
             this.TableNV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.TableNV.Location = new System.Drawing.Point(166, 439);
+            this.TableNV.Location = new System.Drawing.Point(187, 549);
+            this.TableNV.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TableNV.Name = "TableNV";
             this.TableNV.RowHeadersWidth = 51;
             this.TableNV.RowTemplate.Height = 24;
-            this.TableNV.Size = new System.Drawing.Size(662, 158);
+            this.TableNV.Size = new System.Drawing.Size(745, 198);
             this.TableNV.TabIndex = 98;
             this.TableNV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.TableNV_CellContentClick);
             // 
@@ -146,9 +111,10 @@ namespace WebBanSach
             this.Sua.BackColor = System.Drawing.Color.MediumTurquoise;
             this.Sua.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Sua.ForeColor = System.Drawing.Color.Snow;
-            this.Sua.Location = new System.Drawing.Point(484, 369);
+            this.Sua.Location = new System.Drawing.Point(544, 461);
+            this.Sua.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Sua.Name = "Sua";
-            this.Sua.Size = new System.Drawing.Size(118, 42);
+            this.Sua.Size = new System.Drawing.Size(133, 52);
             this.Sua.TabIndex = 97;
             this.Sua.Text = "Sửa";
             this.Sua.UseVisualStyleBackColor = false;
@@ -159,9 +125,10 @@ namespace WebBanSach
             this.Button5.BackColor = System.Drawing.Color.MediumTurquoise;
             this.Button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button5.ForeColor = System.Drawing.Color.Snow;
-            this.Button5.Location = new System.Drawing.Point(668, 369);
+            this.Button5.Location = new System.Drawing.Point(752, 461);
+            this.Button5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Button5.Name = "Button5";
-            this.Button5.Size = new System.Drawing.Size(114, 42);
+            this.Button5.Size = new System.Drawing.Size(128, 52);
             this.Button5.TabIndex = 94;
             this.Button5.Text = "Thoát";
             this.Button5.UseVisualStyleBackColor = false;
@@ -172,9 +139,10 @@ namespace WebBanSach
             this.Button4.BackColor = System.Drawing.Color.MediumTurquoise;
             this.Button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button4.ForeColor = System.Drawing.Color.Snow;
-            this.Button4.Location = new System.Drawing.Point(315, 369);
+            this.Button4.Location = new System.Drawing.Point(354, 461);
+            this.Button4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Button4.Name = "Button4";
-            this.Button4.Size = new System.Drawing.Size(118, 42);
+            this.Button4.Size = new System.Drawing.Size(133, 52);
             this.Button4.TabIndex = 95;
             this.Button4.Text = "Xoá";
             this.Button4.UseVisualStyleBackColor = false;
@@ -185,9 +153,10 @@ namespace WebBanSach
             this.Button3.BackColor = System.Drawing.Color.MediumTurquoise;
             this.Button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button3.ForeColor = System.Drawing.Color.Snow;
-            this.Button3.Location = new System.Drawing.Point(166, 369);
+            this.Button3.Location = new System.Drawing.Point(187, 461);
+            this.Button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Button3.Name = "Button3";
-            this.Button3.Size = new System.Drawing.Size(107, 42);
+            this.Button3.Size = new System.Drawing.Size(120, 52);
             this.Button3.TabIndex = 96;
             this.Button3.Text = "Thêm";
             this.Button3.UseVisualStyleBackColor = false;
@@ -197,26 +166,30 @@ namespace WebBanSach
             // 
             this.GBchucVu.Controls.Add(this.RadioButton4);
             this.GBchucVu.Controls.Add(this.RadioButton3);
-            this.GBchucVu.Location = new System.Drawing.Point(634, 269);
+            this.GBchucVu.Location = new System.Drawing.Point(713, 336);
+            this.GBchucVu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.GBchucVu.Name = "GBchucVu";
-            this.GBchucVu.Size = new System.Drawing.Size(244, 94);
+            this.GBchucVu.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.GBchucVu.Size = new System.Drawing.Size(274, 118);
             this.GBchucVu.TabIndex = 93;
             this.GBchucVu.TabStop = false;
             // 
             // RadioButton4
             // 
-            this.RadioButton4.Location = new System.Drawing.Point(6, 51);
+            this.RadioButton4.Location = new System.Drawing.Point(7, 64);
+            this.RadioButton4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.RadioButton4.Name = "RadioButton4";
-            this.RadioButton4.Size = new System.Drawing.Size(195, 24);
+            this.RadioButton4.Size = new System.Drawing.Size(219, 30);
             this.RadioButton4.TabIndex = 0;
             this.RadioButton4.Text = "Thu ngân";
             this.RadioButton4.UseVisualStyleBackColor = true;
             // 
             // RadioButton3
             // 
-            this.RadioButton3.Location = new System.Drawing.Point(6, 21);
+            this.RadioButton3.Location = new System.Drawing.Point(7, 26);
+            this.RadioButton3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.RadioButton3.Name = "RadioButton3";
-            this.RadioButton3.Size = new System.Drawing.Size(176, 24);
+            this.RadioButton3.Size = new System.Drawing.Size(198, 30);
             this.RadioButton3.TabIndex = 0;
             this.RadioButton3.Text = "Quản lí";
             this.RadioButton3.UseVisualStyleBackColor = true;
@@ -225,51 +198,57 @@ namespace WebBanSach
             // 
             this.GroupBox1.Controls.Add(this.RadioButton2);
             this.GroupBox1.Controls.Add(this.RadioButton1);
-            this.GroupBox1.Location = new System.Drawing.Point(634, 221);
+            this.GroupBox1.Location = new System.Drawing.Point(713, 276);
+            this.GroupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.GroupBox1.Name = "GroupBox1";
-            this.GroupBox1.Size = new System.Drawing.Size(148, 35);
+            this.GroupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.GroupBox1.Size = new System.Drawing.Size(166, 44);
             this.GroupBox1.TabIndex = 92;
             this.GroupBox1.TabStop = false;
             // 
             // RadioButton2
             // 
-            this.RadioButton2.Location = new System.Drawing.Point(86, 8);
+            this.RadioButton2.Location = new System.Drawing.Point(97, 10);
+            this.RadioButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.RadioButton2.Name = "RadioButton2";
-            this.RadioButton2.Size = new System.Drawing.Size(56, 24);
+            this.RadioButton2.Size = new System.Drawing.Size(63, 30);
             this.RadioButton2.TabIndex = 0;
             this.RadioButton2.Text = "Nữ";
             this.RadioButton2.UseVisualStyleBackColor = true;
             // 
             // RadioButton1
             // 
-            this.RadioButton1.Location = new System.Drawing.Point(14, 8);
+            this.RadioButton1.Location = new System.Drawing.Point(16, 10);
+            this.RadioButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.RadioButton1.Name = "RadioButton1";
-            this.RadioButton1.Size = new System.Drawing.Size(66, 24);
+            this.RadioButton1.Size = new System.Drawing.Size(74, 30);
             this.RadioButton1.TabIndex = 0;
             this.RadioButton1.Text = "Nam";
             this.RadioButton1.UseVisualStyleBackColor = true;
             // 
             // MaNV
             // 
-            this.MaNV.Location = new System.Drawing.Point(634, 153);
+            this.MaNV.Location = new System.Drawing.Point(713, 191);
+            this.MaNV.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaNV.Name = "MaNV";
-            this.MaNV.Size = new System.Drawing.Size(148, 22);
+            this.MaNV.Size = new System.Drawing.Size(166, 26);
             this.MaNV.TabIndex = 91;
             // 
             // TenNV
             // 
-            this.TenNV.Location = new System.Drawing.Point(634, 193);
+            this.TenNV.Location = new System.Drawing.Point(713, 241);
+            this.TenNV.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TenNV.Name = "TenNV";
-            this.TenNV.Size = new System.Drawing.Size(148, 22);
+            this.TenNV.Size = new System.Drawing.Size(166, 26);
             this.TenNV.TabIndex = 90;
             // 
             // Label8
             // 
             this.Label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label8.ForeColor = System.Drawing.Color.MediumTurquoise;
-            this.Label8.Location = new System.Drawing.Point(528, 305);
+            this.Label8.Location = new System.Drawing.Point(594, 381);
             this.Label8.Name = "Label8";
-            this.Label8.Size = new System.Drawing.Size(100, 23);
+            this.Label8.Size = new System.Drawing.Size(112, 29);
             this.Label8.TabIndex = 89;
             this.Label8.Text = "Chức vụ";
             // 
@@ -277,9 +256,9 @@ namespace WebBanSach
             // 
             this.Label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label6.ForeColor = System.Drawing.Color.MediumTurquoise;
-            this.Label6.Location = new System.Drawing.Point(528, 196);
+            this.Label6.Location = new System.Drawing.Point(594, 245);
             this.Label6.Name = "Label6";
-            this.Label6.Size = new System.Drawing.Size(100, 23);
+            this.Label6.Size = new System.Drawing.Size(112, 29);
             this.Label6.TabIndex = 88;
             this.Label6.Text = "Tên NV";
             // 
@@ -287,9 +266,9 @@ namespace WebBanSach
             // 
             this.Label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label10.ForeColor = System.Drawing.Color.MediumTurquoise;
-            this.Label10.Location = new System.Drawing.Point(528, 231);
+            this.Label10.Location = new System.Drawing.Point(594, 289);
             this.Label10.Name = "Label10";
-            this.Label10.Size = new System.Drawing.Size(100, 23);
+            this.Label10.Size = new System.Drawing.Size(112, 29);
             this.Label10.TabIndex = 87;
             this.Label10.Text = "Giới tính";
             // 
@@ -297,9 +276,9 @@ namespace WebBanSach
             // 
             this.Label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label4.ForeColor = System.Drawing.Color.MediumTurquoise;
-            this.Label4.Location = new System.Drawing.Point(528, 196);
+            this.Label4.Location = new System.Drawing.Point(594, 245);
             this.Label4.Name = "Label4";
-            this.Label4.Size = new System.Drawing.Size(100, 23);
+            this.Label4.Size = new System.Drawing.Size(112, 29);
             this.Label4.TabIndex = 86;
             this.Label4.Text = "Label3";
             // 
@@ -307,9 +286,9 @@ namespace WebBanSach
             // 
             this.Label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label5.ForeColor = System.Drawing.Color.MediumTurquoise;
-            this.Label5.Location = new System.Drawing.Point(528, 156);
+            this.Label5.Location = new System.Drawing.Point(594, 195);
             this.Label5.Name = "Label5";
-            this.Label5.Size = new System.Drawing.Size(100, 23);
+            this.Label5.Size = new System.Drawing.Size(112, 29);
             this.Label5.TabIndex = 85;
             this.Label5.Text = "Mã NV";
             // 
@@ -317,9 +296,9 @@ namespace WebBanSach
             // 
             this.Label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label3.ForeColor = System.Drawing.Color.MediumTurquoise;
-            this.Label3.Location = new System.Drawing.Point(528, 156);
+            this.Label3.Location = new System.Drawing.Point(594, 195);
             this.Label3.Name = "Label3";
-            this.Label3.Size = new System.Drawing.Size(100, 23);
+            this.Label3.Size = new System.Drawing.Size(112, 29);
             this.Label3.TabIndex = 84;
             this.Label3.Text = "Label3";
             // 
@@ -327,17 +306,17 @@ namespace WebBanSach
             // 
             this.Label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label2.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.Label2.Location = new System.Drawing.Point(367, 56);
+            this.Label2.Location = new System.Drawing.Point(413, 70);
             this.Label2.Name = "Label2";
-            this.Label2.Size = new System.Drawing.Size(371, 27);
+            this.Label2.Size = new System.Drawing.Size(417, 34);
             this.Label2.TabIndex = 83;
             this.Label2.Text = "QUẢN LÍ NHÂN VIÊN";
             // 
             // NhanVien
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(943, 608);
+            this.ClientSize = new System.Drawing.Size(1061, 760);
             this.Controls.Add(this.MenuStrip1);
             this.Controls.Add(this.PictureBox1);
             this.Controls.Add(this.TableNV);
@@ -356,8 +335,10 @@ namespace WebBanSach
             this.Controls.Add(this.Label5);
             this.Controls.Add(this.Label3);
             this.Controls.Add(this.Label2);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "NhanVien";
             this.Text = "NhanVien";
+            this.Load += new System.EventHandler(this.NhanVien_Load);
             this.MenuStrip1.ResumeLayout(false);
             this.MenuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
@@ -373,10 +354,6 @@ namespace WebBanSach
 
         internal System.Windows.Forms.MenuStrip MenuStrip1;
         internal System.Windows.Forms.ToolStripMenuItem menu1;
-        internal System.Windows.Forms.ToolStripMenuItem menu2;
-        internal System.Windows.Forms.ToolStripMenuItem menu3;
-        internal System.Windows.Forms.ToolStripMenuItem menu4;
-        internal System.Windows.Forms.ToolStripMenuItem TìmKiếmToolStripMenuItem;
         internal System.Windows.Forms.PictureBox PictureBox1;
         internal System.Windows.Forms.DataGridView TableNV;
         internal System.Windows.Forms.Button Sua;
