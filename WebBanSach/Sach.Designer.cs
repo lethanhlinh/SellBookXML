@@ -275,7 +275,7 @@ namespace WebBanSach
             this.Label5.Name = "Label5";
             this.Label5.Size = new System.Drawing.Size(141, 36);
             this.Label5.TabIndex = 2;
-            this.Label5.Text = "Ngày xuất bản";
+            this.Label5.Text = "Năm xuất bản";
             // 
             // Label4
             // 

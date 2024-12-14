@@ -164,7 +164,7 @@ namespace WebBanSach
             this.GroupBox1.Size = new System.Drawing.Size(786, 222);
             this.GroupBox1.TabIndex = 63;
             this.GroupBox1.TabStop = false;
-            this.GroupBox1.Text = "Thông tin thuốc";
+            this.GroupBox1.Text = "Thông tin sách";
             // 
             // MaThuoc
             // 
@@ -223,15 +223,15 @@ namespace WebBanSach
             this.Label11.Name = "Label11";
             this.Label11.Size = new System.Drawing.Size(105, 36);
             this.Label11.TabIndex = 2;
-            this.Label11.Text = "Phòng";
+            this.Label11.Text = "Kho";
             // 
             // Label6
             // 
-            this.Label6.Location = new System.Drawing.Point(21, 170);
+            this.Label6.Location = new System.Drawing.Point(24, 170);
             this.Label6.Name = "Label6";
             this.Label6.Size = new System.Drawing.Size(141, 36);
             this.Label6.TabIndex = 2;
-            this.Label6.Text = "Mã thuốc";
+            this.Label6.Text = "Mã sách";
             // 
             // Label4
             // 
@@ -257,7 +257,8 @@ namespace WebBanSach
             this.Label3.Name = "Label3";
             this.Label3.Size = new System.Drawing.Size(520, 42);
             this.Label3.TabIndex = 62;
-            this.Label3.Text = "BÀN GIAO SÁCH CHO CÁC PHÒNG";
+            this.Label3.Text = "BÀN GIAO SÁCH CHO CÁC KHO";
+            this.Label3.Click += new System.EventHandler(this.Label3_Click);
             // 
             // BanGiao
             // 
