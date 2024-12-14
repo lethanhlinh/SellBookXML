@@ -102,6 +102,7 @@ namespace WebBanSach
             this.Sua.TabIndex = 67;
             this.Sua.Text = "Sửa";
             this.Sua.UseVisualStyleBackColor = false;
+            this.Sua.Click += new System.EventHandler(this.Sua_Click);
             // 
             // Button5
             // 
@@ -115,6 +116,7 @@ namespace WebBanSach
             this.Button5.TabIndex = 64;
             this.Button5.Text = "Thoát";
             this.Button5.UseVisualStyleBackColor = false;
+            this.Button5.Click += new System.EventHandler(this.Button5_Click);
             // 
             // Xoa
             // 
@@ -141,6 +143,7 @@ namespace WebBanSach
             this.Them.TabIndex = 66;
             this.Them.Text = "Thêm";
             this.Them.UseVisualStyleBackColor = false;
+            this.Them.Click += new System.EventHandler(this.Them_Click);
             // 
             // GroupBox1
             // 

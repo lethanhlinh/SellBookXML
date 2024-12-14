@@ -37,5 +37,17 @@ namespace WebBanSach
             Form3.Show();
             this.Hide();
         }
+
+        private void menu4_Click(object sender, EventArgs e)
+        {
+             BanGiao bg = new BanGiao();
+            bg.Show();
+            this.Hide();
+        }
+
+        private void TìmKiếmbgToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+          
+        }
     }
 }

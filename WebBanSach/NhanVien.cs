@@ -36,7 +36,7 @@ namespace WebBanSach
         {
             try
             {
-                string connString = "Data Source=ADMIN-PC;Initial Catalog=qlSachCuaHang;Integrated Security=True;";
+                string connString = "Data Source=quancutee\\QUANCUTEE;Initial Catalog=qlSachCuaHang;Integrated Security=True;Encrypt=True;";
                 using (SqlConnection conn = new SqlConnection(connString))
                 {
                     conn.Open();
@@ -88,7 +88,7 @@ namespace WebBanSach
 
         private void AddIntoSQL(string maNV, string tenNV, string gioiTinh, string tenCV)
         {
-            string connString = "Data Source=ADMIN-PC;Initial Catalog=qlSachCuaHang;Integrated Security=True;";
+            string connString = "Data Source=quancutee\\QUANCUTEE;Initial Catalog=qlSachCuaHang;Integrated Security=True;Encrypt=True;";
             using (SqlConnection conn = new SqlConnection(connString))
             {
                 conn.Open();
@@ -153,7 +153,7 @@ namespace WebBanSach
         {
             try
             {
-                string connString = "Data Source=ADMIN-PC;Initial Catalog=qlSachCuaHang;Integrated Security=True;";
+                string connString = "Data Source=quancutee\\QUANCUTEE;Initial Catalog=qlSachCuaHang;Integrated Security=True;Encrypt=True;";
                 using (SqlConnection conn = new SqlConnection(connString))
                 {
                     conn.Open();
@@ -267,7 +267,7 @@ namespace WebBanSach
                     TableNV.DataSource = dt;
 
                     // Xóa nhân viên khỏi cơ sở dữ liệu
-                    string connString = "Data Source=ADMIN-PC;Initial Catalog=qlSachCuaHang;Integrated Security=True;Encrypt=True;";
+                    string connString = "Data Source=quancutee\\QUANCUTEE;Initial Catalog=qlSachCuaHang;Integrated Security=True;Encrypt=True;Encrypt=True;";
                     using (SqlConnection conn = new SqlConnection(connString))
                     {
                         conn.Open();

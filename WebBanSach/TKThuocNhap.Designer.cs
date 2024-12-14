@@ -64,16 +64,18 @@ namespace WebBanSach
             "10",
             "11",
             "12"});
-            this.ComboBox1.Location = new System.Drawing.Point(244, 255);
+            this.ComboBox1.Location = new System.Drawing.Point(274, 319);
+            this.ComboBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ComboBox1.Name = "ComboBox1";
-            this.ComboBox1.Size = new System.Drawing.Size(108, 24);
+            this.ComboBox1.Size = new System.Drawing.Size(121, 28);
             this.ComboBox1.TabIndex = 156;
             // 
             // PictureBox1
             // 
-            this.PictureBox1.Location = new System.Drawing.Point(565, 87);
+            this.PictureBox1.Location = new System.Drawing.Point(636, 109);
+            this.PictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.PictureBox1.Name = "PictureBox1";
-            this.PictureBox1.Size = new System.Drawing.Size(339, 196);
+            this.PictureBox1.Size = new System.Drawing.Size(381, 245);
             this.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PictureBox1.TabIndex = 155;
             this.PictureBox1.TabStop = false;
@@ -83,9 +85,9 @@ namespace WebBanSach
             this.Label4.AutoSize = true;
             this.Label4.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label4.ForeColor = System.Drawing.Color.SlateBlue;
-            this.Label4.Location = new System.Drawing.Point(51, 194);
+            this.Label4.Location = new System.Drawing.Point(57, 242);
             this.Label4.Name = "Label4";
-            this.Label4.Size = new System.Drawing.Size(187, 32);
+            this.Label4.Size = new System.Drawing.Size(216, 38);
             this.Label4.TabIndex = 154;
             this.Label4.Text = "Mã thuốc nhập";
             // 
@@ -94,16 +96,18 @@ namespace WebBanSach
             this.TextBox2.BackColor = System.Drawing.Color.GhostWhite;
             this.TextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBox2.ForeColor = System.Drawing.Color.DarkBlue;
-            this.TextBox2.Location = new System.Drawing.Point(244, 192);
+            this.TextBox2.Location = new System.Drawing.Point(274, 240);
+            this.TextBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TextBox2.Name = "TextBox2";
-            this.TextBox2.Size = new System.Drawing.Size(222, 34);
+            this.TextBox2.Size = new System.Drawing.Size(249, 39);
             this.TextBox2.TabIndex = 153;
             // 
             // PictureBox2
             // 
-            this.PictureBox2.Location = new System.Drawing.Point(266, 29);
+            this.PictureBox2.Location = new System.Drawing.Point(299, 36);
+            this.PictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.PictureBox2.Name = "PictureBox2";
-            this.PictureBox2.Size = new System.Drawing.Size(44, 37);
+            this.PictureBox2.Size = new System.Drawing.Size(50, 46);
             this.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PictureBox2.TabIndex = 152;
             this.PictureBox2.TabStop = false;
@@ -114,11 +118,12 @@ namespace WebBanSach
             this.DataGrid1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DataGrid1.BackgroundColor = System.Drawing.Color.LightSkyBlue;
             this.DataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DataGrid1.Location = new System.Drawing.Point(116, 421);
+            this.DataGrid1.Location = new System.Drawing.Point(130, 526);
+            this.DataGrid1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.DataGrid1.Name = "DataGrid1";
             this.DataGrid1.RowHeadersWidth = 51;
             this.DataGrid1.RowTemplate.Height = 24;
-            this.DataGrid1.Size = new System.Drawing.Size(779, 195);
+            this.DataGrid1.Size = new System.Drawing.Size(876, 244);
             this.DataGrid1.TabIndex = 151;
             // 
             // Button1
@@ -126,21 +131,24 @@ namespace WebBanSach
             this.Button1.BackColor = System.Drawing.Color.GhostWhite;
             this.Button1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button1.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.Button1.Location = new System.Drawing.Point(561, 342);
+            this.Button1.Location = new System.Drawing.Point(631, 428);
+            this.Button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Button1.Name = "Button1";
-            this.Button1.Size = new System.Drawing.Size(142, 60);
+            this.Button1.Size = new System.Drawing.Size(160, 75);
             this.Button1.TabIndex = 150;
             this.Button1.Text = "Thoát";
             this.Button1.UseVisualStyleBackColor = false;
+            this.Button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // Button2
             // 
             this.Button2.BackColor = System.Drawing.Color.GhostWhite;
             this.Button2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button2.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.Button2.Location = new System.Drawing.Point(295, 342);
+            this.Button2.Location = new System.Drawing.Point(332, 428);
+            this.Button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Button2.Name = "Button2";
-            this.Button2.Size = new System.Drawing.Size(142, 60);
+            this.Button2.Size = new System.Drawing.Size(160, 75);
             this.Button2.TabIndex = 149;
             this.Button2.Text = "Tìm kiếm";
             this.Button2.UseVisualStyleBackColor = false;
@@ -150,9 +158,9 @@ namespace WebBanSach
             this.Label2.AutoSize = true;
             this.Label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label2.ForeColor = System.Drawing.Color.SlateBlue;
-            this.Label2.Location = new System.Drawing.Point(54, 249);
+            this.Label2.Location = new System.Drawing.Point(61, 311);
             this.Label2.Name = "Label2";
-            this.Label2.Size = new System.Drawing.Size(150, 32);
+            this.Label2.Size = new System.Drawing.Size(173, 38);
             this.Label2.TabIndex = 148;
             this.Label2.Text = "Tháng nhập";
             // 
@@ -161,9 +169,9 @@ namespace WebBanSach
             this.Label3.AutoSize = true;
             this.Label3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label3.ForeColor = System.Drawing.Color.SlateBlue;
-            this.Label3.Location = new System.Drawing.Point(54, 134);
+            this.Label3.Location = new System.Drawing.Point(61, 168);
             this.Label3.Name = "Label3";
-            this.Label3.Size = new System.Drawing.Size(115, 32);
+            this.Label3.Size = new System.Drawing.Size(133, 38);
             this.Label3.TabIndex = 147;
             this.Label3.Text = "Mã nhập";
             // 
@@ -172,26 +180,27 @@ namespace WebBanSach
             this.TextBox1.BackColor = System.Drawing.Color.GhostWhite;
             this.TextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBox1.ForeColor = System.Drawing.Color.DarkBlue;
-            this.TextBox1.Location = new System.Drawing.Point(244, 132);
+            this.TextBox1.Location = new System.Drawing.Point(274, 165);
+            this.TextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TextBox1.Name = "TextBox1";
-            this.TextBox1.Size = new System.Drawing.Size(222, 34);
+            this.TextBox1.Size = new System.Drawing.Size(249, 39);
             this.TextBox1.TabIndex = 146;
             // 
             // Label1
             // 
             this.Label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label1.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.Label1.Location = new System.Drawing.Point(316, 32);
+            this.Label1.Location = new System.Drawing.Point(356, 40);
             this.Label1.Name = "Label1";
-            this.Label1.Size = new System.Drawing.Size(416, 34);
+            this.Label1.Size = new System.Drawing.Size(468, 42);
             this.Label1.TabIndex = 145;
             this.Label1.Text = "TÌM KIẾM THUỐC NHẬP";
             // 
             // TKThuocNhap
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(954, 644);
+            this.ClientSize = new System.Drawing.Size(1073, 805);
             this.Controls.Add(this.ComboBox1);
             this.Controls.Add(this.PictureBox1);
             this.Controls.Add(this.Label4);
@@ -204,6 +213,7 @@ namespace WebBanSach
             this.Controls.Add(this.Label3);
             this.Controls.Add(this.TextBox1);
             this.Controls.Add(this.Label1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "TKThuocNhap";
             this.Text = "TKThuocNhap";
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();

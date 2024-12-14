@@ -39,7 +39,7 @@ namespace WebBanSach
             this.ThốngKêTiềnNhậpThuốcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ThốngKêSốLượngTheoNhómThuốcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.TìmKiếmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.TìmKiếmThuốcNhậpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.TìmKiếmbgToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.TìmKiếmNhânViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.TìmKiếmThôngTinThuốcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.TìmKiếmThuốcBànGiaoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -99,6 +99,7 @@ namespace WebBanSach
             this.menu4.Name = "menu4";
             this.menu4.Size = new System.Drawing.Size(115, 34);
             this.menu4.Text = "Bán sách";
+            this.menu4.Click += new System.EventHandler(this.menu4_Click);
             // 
             // menu5
             // 
@@ -132,7 +133,7 @@ namespace WebBanSach
             // TìmKiếmToolStripMenuItem
             // 
             this.TìmKiếmToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.TìmKiếmThuốcNhậpToolStripMenuItem,
+            this.TìmKiếmbgToolStripMenuItem,
             this.TìmKiếmNhânViênToolStripMenuItem,
             this.TìmKiếmThôngTinThuốcToolStripMenuItem,
             this.TìmKiếmThuốcBànGiaoToolStripMenuItem});
@@ -141,11 +142,12 @@ namespace WebBanSach
             this.TìmKiếmToolStripMenuItem.Size = new System.Drawing.Size(120, 34);
             this.TìmKiếmToolStripMenuItem.Text = "Tìm kiếm";
             // 
-            // TìmKiếmThuốcNhậpToolStripMenuItem
+            // TìmKiếmbgToolStripMenuItem
             // 
-            this.TìmKiếmThuốcNhậpToolStripMenuItem.Name = "TìmKiếmThuốcNhậpToolStripMenuItem";
-            this.TìmKiếmThuốcNhậpToolStripMenuItem.Size = new System.Drawing.Size(369, 38);
-            this.TìmKiếmThuốcNhậpToolStripMenuItem.Text = "Tìm kiếm thuốc nhập";
+            this.TìmKiếmbgToolStripMenuItem.Name = "TìmKiếmbgToolStripMenuItem";
+            this.TìmKiếmbgToolStripMenuItem.Size = new System.Drawing.Size(369, 38);
+            this.TìmKiếmbgToolStripMenuItem.Text = "Tìm kiếm thuốc nhập";
+            this.TìmKiếmbgToolStripMenuItem.Click += new System.EventHandler(this.TìmKiếmbgToolStripMenuItem_Click);
             // 
             // TìmKiếmNhânViênToolStripMenuItem
             // 
@@ -199,7 +201,7 @@ namespace WebBanSach
         internal System.Windows.Forms.ToolStripMenuItem ThốngKêTiềnNhậpThuốcToolStripMenuItem;
         internal System.Windows.Forms.ToolStripMenuItem ThốngKêSốLượngTheoNhómThuốcToolStripMenuItem;
         internal System.Windows.Forms.ToolStripMenuItem TìmKiếmToolStripMenuItem;
-        internal System.Windows.Forms.ToolStripMenuItem TìmKiếmThuốcNhậpToolStripMenuItem;
+        internal System.Windows.Forms.ToolStripMenuItem TìmKiếmbgToolStripMenuItem;
         internal System.Windows.Forms.ToolStripMenuItem TìmKiếmNhânViênToolStripMenuItem;
         internal System.Windows.Forms.ToolStripMenuItem TìmKiếmThôngTinThuốcToolStripMenuItem;
         internal System.Windows.Forms.ToolStripMenuItem TìmKiếmThuốcBànGiaoToolStripMenuItem;

@@ -16,5 +16,16 @@ namespace WebBanSach
         {
             InitializeComponent();
         }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Bạn có thật sự muốn thoát?", "Thoát", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                Home qls = new Home();
+                qls.Show();
+                this.Hide();
+            }
+        }
     }
 }
