@@ -72,6 +72,7 @@ namespace WebBanSach
             this.Button1.TabIndex = 34;
             this.Button1.Text = "Đăng Nhập";
             this.Button1.UseVisualStyleBackColor = false;
+            this.Button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // TextBox2
             // 

@@ -38,16 +38,44 @@ namespace WebBanSach
             this.Hide();
         }
 
-        private void menu4_Click(object sender, EventArgs e)
-        {
-             BanGiao bg = new BanGiao();
-            bg.Show();
-            this.Hide();
-        }
+     
 
         private void TìmKiếmbgToolStripMenuItem_Click(object sender, EventArgs e)
         {
           
+        }
+
+        private void TìmKiếmNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TKNhanVien tknv = new TKNhanVien();
+            tknv.Show();    
+            this.Hide();
+        }
+
+        private void TìmKiếmThuốcBànGiaoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void tìmKiếmSáchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TKSach tks = new TKSach();
+            tks.Show();
+            this.Hide();
+        }
+
+        private void tKSachToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TKSach tks = new TKSach();
+            tks.Show();
+            this.Hide();
+        }
+
+        private void ĐăngNhậpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DangNhap dn = new DangNhap();
+            dn.Show();
+            this.Hide();
         }
     }
 }

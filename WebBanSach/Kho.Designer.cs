@@ -256,8 +256,8 @@ namespace WebBanSach
             this.menu3.BackColor = System.Drawing.Color.PaleTurquoise;
             this.menu3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menu3.Name = "menu3";
-            this.menu3.Size = new System.Drawing.Size(174, 27);
-            this.menu3.Text = "Nhập sách vào kho";
+            this.menu3.Size = new System.Drawing.Size(210, 27);
+            this.menu3.Text = "Nhập sách vào hóa đơn";
             // 
             // label1
             // 
@@ -266,9 +266,9 @@ namespace WebBanSach
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(322, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(311, 25);
+            this.label1.Size = new System.Drawing.Size(297, 25);
             this.label1.TabIndex = 99;
-            this.label1.Text = "NHẬP SÁCH VÀO KHO HÀNG";
+            this.label1.Text = "NHẬP SÁCH VÀO HÓA ĐƠN";
             // 
             // MaSach
             // 

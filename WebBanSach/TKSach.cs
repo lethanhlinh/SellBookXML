@@ -11,12 +11,31 @@ using System.Windows.Forms;
 
 namespace WebBanSach
 {
-    public partial class TKNhanVien : Form
+    public partial class TKSach : Form
     {
-        public TKNhanVien()
+        public TKSach()
         {
             InitializeComponent();
-            LoadAllEmployees(); // Tải tất cả nhân viên khi form mở
+            LoadAllBooks(); // Tải tất cả sách khi form mở
+        }
+
+        private void LoadAllBooks()
+        {
+            string connString = "Data Source=ADMIN-PC;Initial Catalog=qlSachCuaHang;Integrated Security=True;";
+            using (SqlConnection conn = new SqlConnection(connString))
+            {
+                conn.Open();
+                string query = "SELECT * FROM ThongTinSach"; // 
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    using (SqlDataAdapter da = new SqlDataAdapter(cmd))
+                    {
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+                        dataGridViewSach.DataSource = dt; // Hiển thị tất cả dữ liệu
+                    }
+                }
+            }
         }
 
         private void Button1_Click(object sender, EventArgs e)
@@ -24,76 +43,60 @@ namespace WebBanSach
             DialogResult result = MessageBox.Show("Bạn có thật sự muốn thoát?", "Thoát", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
             {
-                Home qls = new Home();
-                qls.Show();
+                Home quanLiThuocForm = new Home();
+                quanLiThuocForm.Show();
                 this.Hide();
             }
         }
-        private void LoadAllEmployees()
-        {
-            string connString = "Data Source=ADMIN-PC;Initial Catalog=qlSachCuaHang;Integrated Security=True;";
-            using (SqlConnection conn = new SqlConnection(connString))
-            {
-                conn.Open();
-                string query = "SELECT * FROM NhanVien";
-                using (SqlCommand cmd = new SqlCommand(query, conn))
-                {
-                    using (SqlDataAdapter da = new SqlDataAdapter(cmd))
-                    {
-                        DataTable dt = new DataTable();
-                        da.Fill(dt);
-                        dataGridViewNV.DataSource = dt; // Hiển thị tất cả dữ liệu
-                    }
-                }
-            }
-        }
+
         private void TimKiem_Click(object sender, EventArgs e)
         {
-            string maNV = txtMaNV.Text.Trim();
-            string tenNV = txtTenNV.Text.Trim();
+            string maSach = txtMaSach.Text.Trim();
+            string tenSach = txtTenSach.Text.Trim();
 
             // Gọi hàm tìm kiếm
-            SearchEmployee(maNV, tenNV);
+            SearchBook(maSach, tenSach);
         }
 
-        private void SearchEmployee(string maNV, string tenNV)
+        private void SearchBook(string maSach, string tenSach)
         {
             string connString = "Data Source=ADMIN-PC;Initial Catalog=qlSachCuaHang;Integrated Security=True;";
             using (SqlConnection conn = new SqlConnection(connString))
             {
                 conn.Open();
-                string query = "SELECT * FROM NhanVien WHERE 1=1"; // Bắt đầu với điều kiện luôn đúng
+                string query = "SELECT * FROM ThongTinSach WHERE 1=1"; // Bắt đầu với điều kiện luôn đúng
 
-                if (!string.IsNullOrEmpty(maNV))
+                if (!string.IsNullOrEmpty(maSach))
                 {
-                    query += " AND maNV = @maNV";
+                    query += " AND maSach = @maSach";
                 }
 
-                if (!string.IsNullOrEmpty(tenNV))
+                if (!string.IsNullOrEmpty(tenSach))
                 {
-                    query += " AND tenNV LIKE @tenNV"; // Sử dụng LIKE cho tìm kiếm tên
+                    query += " AND tenSach LIKE @tenSach"; // Sử dụng LIKE cho tìm kiếm tên
                 }
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    if (!string.IsNullOrEmpty(maNV))
+                    if (!string.IsNullOrEmpty(maSach))
                     {
-                        cmd.Parameters.AddWithValue("@maNV", maNV);
+                        cmd.Parameters.AddWithValue("@maSach", maSach);
                     }
 
-                    if (!string.IsNullOrEmpty(tenNV))
+                    if (!string.IsNullOrEmpty(tenSach))
                     {
-                        cmd.Parameters.AddWithValue("@tenNV", "%" + tenNV + "%"); // Thêm ký tự "%" để tìm kiếm
+                        cmd.Parameters.AddWithValue("@tenSach", "%" + tenSach + "%"); // Thêm ký tự "%" để tìm kiếm
                     }
 
                     using (SqlDataAdapter da = new SqlDataAdapter(cmd))
                     {
                         DataTable dt = new DataTable();
                         da.Fill(dt);
-                        dataGridViewNV.DataSource = dt; // Hiển thị kết quả trên DataGridView
+                        dataGridViewSach.DataSource = dt; // Hiển thị kết quả trên DataGridView
                     }
                 }
             }
         }
+
     }
 }

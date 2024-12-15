@@ -24,7 +24,7 @@ namespace WebBanSach
         {
             try
             {
-                string connString = "Data Source=quancutee\\QUANCUTEE;Initial Catalog=qlSachCuaHang;Integrated Security=True;Encrypt=True;";
+                string connString = "Data Source=ADMIN-PC;Initial Catalog=qlSachCuaHang;Integrated Security=True;";
                 using (SqlConnection conn = new SqlConnection(connString))
                 {
                     conn.Open();
@@ -76,7 +76,7 @@ namespace WebBanSach
 
         private void AddIntoSQL(string maSach, string tenSach, string tacGia, string nhaXuatBan, int namXuatBan, int gia, string maNhomSach)
         {
-            string connString = "Data Source=quancutee\\QUANCUTEE;Initial Catalog=qlSachCuaHang;Integrated Security=True;Encrypt=True;";
+            string connString = "Data Source=ADMIN-PC;Initial Catalog=qlSachCuaHang;Integrated Security=True;";
             using (SqlConnection conn = new SqlConnection(connString))
             {
                 conn.Open();
@@ -138,7 +138,7 @@ namespace WebBanSach
 
         private void UpdateSQL(string maSach, string tenSach, string tacGia, string nhaXuatBan, int namXuatBan, int gia, string maNhomSach)
         {
-            string connString = "Data Source=quancutee\\QUANCUTEE;Initial Catalog=qlSachCuaHang;Integrated Security=True;Encrypt=True;";
+            string connString = "Data Source=ADMIN-PC;Initial Catalog=qlSachCuaHang;Integrated Security=True;";
             using (SqlConnection conn = new SqlConnection(connString))
             {
                 conn.Open();
@@ -166,7 +166,7 @@ namespace WebBanSach
 
         private void DeleteSQL(string maSach)
         {
-            string connString = "Data Source=quancutee\\QUANCUTEE;Initial Catalog=qlSachCuaHang;Integrated Security=True;Encrypt=True;";
+            string connString = "Data Source=ADMIN-PC;Initial Catalog=qlSachCuaHang;Integrated Security=True;";
             using (SqlConnection conn = new SqlConnection(connString))
             {
                 conn.Open();
