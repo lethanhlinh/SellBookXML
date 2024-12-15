@@ -307,6 +307,7 @@ namespace WebBanSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Beige;
             this.ClientSize = new System.Drawing.Size(1223, 749);
             this.Controls.Add(this.MenuStrip1);
             this.Controls.Add(this.TableSach);
@@ -318,7 +319,7 @@ namespace WebBanSach
             this.Controls.Add(this.Label1);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Sach";
-            this.Text = "Thuoc";
+            this.Text = "SACH";
             this.MenuStrip1.ResumeLayout(false);
             this.MenuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TableSach)).EndInit();

@@ -38,7 +38,7 @@ namespace WebBanSach
         {
             try
             {
-                string connString = "Data Source=ADMIN-PC;Initial Catalog=qlSachCuaHang;Integrated Security=True;";
+                string connString = "Data Source=quancutee\\QUANCUTEE;Initial Catalog=qlSachCuaHang;Integrated Security=True;";
                 using (SqlConnection conn = new SqlConnection(connString))
                 {
                     conn.Open();
@@ -83,7 +83,7 @@ namespace WebBanSach
         }
         private void AddIntoSQL(string maNhap, string maSach, DateTime ngayNhap, int soLuong, int giaBan, string trangThai)
         {
-            string connString = "Data Source=ADMIN-PC;Initial Catalog=qlSachCuaHang;Integrated Security=True;";
+            string connString = "Data Source=quancutee\\QUANCUTEE;Initial Catalog=qlSachCuaHang;Integrated Security=True;";
             using (SqlConnection conn = new SqlConnection(connString))
             {
                 conn.Open();
@@ -135,7 +135,7 @@ namespace WebBanSach
 
         private void UpdateSQL(string maNhap, string maSach, DateTime ngayNhap, int soLuong, int giaBan, string trangThai)
         {
-            string connString = "Data Source=ADMIN-PC;Initial Catalog=qlSachCuaHang;Integrated Security=True;";
+            string connString = "Data Source=quancutee\\QUANCUTEE;Initial Catalog=qlSachCuaHang;Integrated Security=True;";
             using (SqlConnection conn = new SqlConnection(connString))
             {
                 conn.Open();
@@ -158,7 +158,7 @@ namespace WebBanSach
 
         private void DeleteSQL(string maNhap)
         {
-            string connString = "Data Source=ADMIN-PC;Initial Catalog=qlSachCuaHang;Integrated Security=True;";
+            string connString = "Data Source=quancutee\\QUANCUTEE;Initial Catalog=qlSachCuaHang;Integrated Security=True;";
             using (SqlConnection conn = new SqlConnection(connString))
             {
                 conn.Open();

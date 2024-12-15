@@ -63,9 +63,10 @@ namespace WebBanSach
             this.Button7.BackColor = System.Drawing.Color.MediumTurquoise;
             this.Button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button7.ForeColor = System.Drawing.Color.Snow;
-            this.Button7.Location = new System.Drawing.Point(373, 504);
+            this.Button7.Location = new System.Drawing.Point(420, 630);
+            this.Button7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Button7.Name = "Button7";
-            this.Button7.Size = new System.Drawing.Size(151, 44);
+            this.Button7.Size = new System.Drawing.Size(170, 55);
             this.Button7.TabIndex = 97;
             this.Button7.Text = "Report";
             this.Button7.UseVisualStyleBackColor = false;
@@ -75,9 +76,10 @@ namespace WebBanSach
             this.Button6.BackColor = System.Drawing.Color.MediumTurquoise;
             this.Button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button6.ForeColor = System.Drawing.Color.Snow;
-            this.Button6.Location = new System.Drawing.Point(772, 504);
+            this.Button6.Location = new System.Drawing.Point(868, 630);
+            this.Button6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Button6.Name = "Button6";
-            this.Button6.Size = new System.Drawing.Size(182, 44);
+            this.Button6.Size = new System.Drawing.Size(205, 55);
             this.Button6.TabIndex = 95;
             this.Button6.Text = "Đã thanh toán";
             this.Button6.UseVisualStyleBackColor = false;
@@ -87,9 +89,10 @@ namespace WebBanSach
             this.Button5.BackColor = System.Drawing.Color.MediumTurquoise;
             this.Button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button5.ForeColor = System.Drawing.Color.Snow;
-            this.Button5.Location = new System.Drawing.Point(578, 504);
+            this.Button5.Location = new System.Drawing.Point(650, 630);
+            this.Button5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Button5.Name = "Button5";
-            this.Button5.Size = new System.Drawing.Size(151, 44);
+            this.Button5.Size = new System.Drawing.Size(170, 55);
             this.Button5.TabIndex = 96;
             this.Button5.Text = "In hoá đơn";
             this.Button5.UseVisualStyleBackColor = false;
@@ -100,44 +103,47 @@ namespace WebBanSach
             this.TableSachNhap.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.TableSachNhap.BackgroundColor = System.Drawing.Color.LightCyan;
             this.TableSachNhap.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.TableSachNhap.Location = new System.Drawing.Point(51, 303);
+            this.TableSachNhap.Location = new System.Drawing.Point(57, 379);
+            this.TableSachNhap.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TableSachNhap.Name = "TableSachNhap";
             this.TableSachNhap.RowHeadersWidth = 51;
             this.TableSachNhap.RowTemplate.Height = 24;
-            this.TableSachNhap.Size = new System.Drawing.Size(874, 159);
+            this.TableSachNhap.Size = new System.Drawing.Size(983, 199);
             this.TableSachNhap.TabIndex = 93;
             // 
             // TextBox5
             // 
-            this.TextBox5.Location = new System.Drawing.Point(664, 466);
+            this.TextBox5.Location = new System.Drawing.Point(747, 582);
+            this.TextBox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TextBox5.Name = "TextBox5";
-            this.TextBox5.Size = new System.Drawing.Size(143, 22);
+            this.TextBox5.Size = new System.Drawing.Size(160, 26);
             this.TextBox5.TabIndex = 92;
             // 
             // Label7
             // 
             this.Label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label7.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.Label7.Location = new System.Drawing.Point(577, 465);
+            this.Label7.Location = new System.Drawing.Point(649, 581);
             this.Label7.Name = "Label7";
-            this.Label7.Size = new System.Drawing.Size(101, 23);
+            this.Label7.Size = new System.Drawing.Size(114, 29);
             this.Label7.TabIndex = 91;
             this.Label7.Text = "Tổng tiền";
             // 
             // GiaBan
             // 
-            this.GiaBan.Location = new System.Drawing.Point(302, 245);
+            this.GiaBan.Location = new System.Drawing.Point(340, 306);
+            this.GiaBan.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.GiaBan.Name = "GiaBan";
-            this.GiaBan.Size = new System.Drawing.Size(143, 22);
+            this.GiaBan.Size = new System.Drawing.Size(160, 26);
             this.GiaBan.TabIndex = 90;
             // 
             // lbGia
             // 
             this.lbGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbGia.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.lbGia.Location = new System.Drawing.Point(127, 243);
+            this.lbGia.Location = new System.Drawing.Point(143, 304);
             this.lbGia.Name = "lbGia";
-            this.lbGia.Size = new System.Drawing.Size(135, 23);
+            this.lbGia.Size = new System.Drawing.Size(152, 29);
             this.lbGia.TabIndex = 89;
             this.lbGia.Text = "Đơn giá";
             // 
@@ -146,9 +152,10 @@ namespace WebBanSach
             this.Button4.BackColor = System.Drawing.Color.MediumTurquoise;
             this.Button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button4.ForeColor = System.Drawing.Color.Snow;
-            this.Button4.Location = new System.Drawing.Point(727, 181);
+            this.Button4.Location = new System.Drawing.Point(818, 226);
+            this.Button4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Button4.Name = "Button4";
-            this.Button4.Size = new System.Drawing.Size(96, 62);
+            this.Button4.Size = new System.Drawing.Size(108, 78);
             this.Button4.TabIndex = 88;
             this.Button4.Text = "Thoát";
             this.Button4.UseVisualStyleBackColor = false;
@@ -159,9 +166,10 @@ namespace WebBanSach
             this.Sua.BackColor = System.Drawing.Color.MediumTurquoise;
             this.Sua.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Sua.ForeColor = System.Drawing.Color.Snow;
-            this.Sua.Location = new System.Drawing.Point(578, 181);
+            this.Sua.Location = new System.Drawing.Point(650, 226);
+            this.Sua.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Sua.Name = "Sua";
-            this.Sua.Size = new System.Drawing.Size(96, 62);
+            this.Sua.Size = new System.Drawing.Size(108, 78);
             this.Sua.TabIndex = 87;
             this.Sua.Text = "Sửa";
             this.Sua.UseVisualStyleBackColor = false;
@@ -170,9 +178,10 @@ namespace WebBanSach
             // dtpNgayNhap
             // 
             this.dtpNgayNhap.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpNgayNhap.Location = new System.Drawing.Point(302, 163);
+            this.dtpNgayNhap.Location = new System.Drawing.Point(340, 204);
+            this.dtpNgayNhap.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dtpNgayNhap.Name = "dtpNgayNhap";
-            this.dtpNgayNhap.Size = new System.Drawing.Size(143, 22);
+            this.dtpNgayNhap.Size = new System.Drawing.Size(160, 26);
             this.dtpNgayNhap.TabIndex = 86;
             // 
             // Xoa
@@ -180,9 +189,10 @@ namespace WebBanSach
             this.Xoa.BackColor = System.Drawing.Color.MediumTurquoise;
             this.Xoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Xoa.ForeColor = System.Drawing.Color.Snow;
-            this.Xoa.Location = new System.Drawing.Point(727, 81);
+            this.Xoa.Location = new System.Drawing.Point(818, 101);
+            this.Xoa.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Xoa.Name = "Xoa";
-            this.Xoa.Size = new System.Drawing.Size(96, 62);
+            this.Xoa.Size = new System.Drawing.Size(108, 78);
             this.Xoa.TabIndex = 84;
             this.Xoa.Text = "Xoá";
             this.Xoa.UseVisualStyleBackColor = false;
@@ -193,9 +203,10 @@ namespace WebBanSach
             this.Them.BackColor = System.Drawing.Color.MediumTurquoise;
             this.Them.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Them.ForeColor = System.Drawing.Color.Snow;
-            this.Them.Location = new System.Drawing.Point(578, 81);
+            this.Them.Location = new System.Drawing.Point(650, 101);
+            this.Them.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Them.Name = "Them";
-            this.Them.Size = new System.Drawing.Size(96, 62);
+            this.Them.Size = new System.Drawing.Size(108, 78);
             this.Them.TabIndex = 85;
             this.Them.Text = "Thêm";
             this.Them.UseVisualStyleBackColor = false;
@@ -203,18 +214,19 @@ namespace WebBanSach
             // 
             // SoLuong
             // 
-            this.SoLuong.Location = new System.Drawing.Point(302, 202);
+            this.SoLuong.Location = new System.Drawing.Point(340, 252);
+            this.SoLuong.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.SoLuong.Name = "SoLuong";
-            this.SoLuong.Size = new System.Drawing.Size(143, 22);
+            this.SoLuong.Size = new System.Drawing.Size(160, 26);
             this.SoLuong.TabIndex = 83;
             // 
             // Label4
             // 
             this.Label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label4.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.Label4.Location = new System.Drawing.Point(140, 201);
+            this.Label4.Location = new System.Drawing.Point(158, 251);
             this.Label4.Name = "Label4";
-            this.Label4.Size = new System.Drawing.Size(135, 23);
+            this.Label4.Size = new System.Drawing.Size(152, 29);
             this.Label4.TabIndex = 80;
             this.Label4.Text = "Số lượng(quyển)";
             // 
@@ -222,9 +234,9 @@ namespace WebBanSach
             // 
             this.Label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label3.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.Label3.Location = new System.Drawing.Point(140, 163);
+            this.Label3.Location = new System.Drawing.Point(158, 204);
             this.Label3.Name = "Label3";
-            this.Label3.Size = new System.Drawing.Size(107, 23);
+            this.Label3.Size = new System.Drawing.Size(120, 29);
             this.Label3.TabIndex = 81;
             this.Label3.Text = "Ngày nhập";
             // 
@@ -232,22 +244,23 @@ namespace WebBanSach
             // 
             this.Label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label2.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.Label2.Location = new System.Drawing.Point(140, 121);
+            this.Label2.Location = new System.Drawing.Point(158, 151);
             this.Label2.Name = "Label2";
-            this.Label2.Size = new System.Drawing.Size(122, 23);
+            this.Label2.Size = new System.Drawing.Size(137, 29);
             this.Label2.TabIndex = 82;
             this.Label2.Text = "Mã Sách";
             // 
             // MenuStrip1
             // 
             this.MenuStrip1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MenuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.MenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.MenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menu3});
             this.MenuStrip1.Location = new System.Drawing.Point(0, 0);
             this.MenuStrip1.Name = "MenuStrip1";
-            this.MenuStrip1.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
-            this.MenuStrip1.Size = new System.Drawing.Size(1004, 31);
+            this.MenuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.MenuStrip1.Size = new System.Drawing.Size(1130, 38);
             this.MenuStrip1.TabIndex = 98;
             this.MenuStrip1.Text = "MenuStrip1";
             // 
@@ -256,7 +269,7 @@ namespace WebBanSach
             this.menu3.BackColor = System.Drawing.Color.PaleTurquoise;
             this.menu3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menu3.Name = "menu3";
-            this.menu3.Size = new System.Drawing.Size(210, 27);
+            this.menu3.Size = new System.Drawing.Size(261, 34);
             this.menu3.Text = "Nhập sách vào hóa đơn";
             // 
             // label1
@@ -264,59 +277,63 @@ namespace WebBanSach
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(322, 40);
+            this.label1.Location = new System.Drawing.Point(369, 38);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(297, 25);
+            this.label1.Size = new System.Drawing.Size(343, 29);
             this.label1.TabIndex = 99;
             this.label1.Text = "NHẬP SÁCH VÀO HÓA ĐƠN";
             // 
             // MaSach
             // 
-            this.MaSach.Location = new System.Drawing.Point(302, 120);
+            this.MaSach.Location = new System.Drawing.Point(340, 150);
+            this.MaSach.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaSach.Name = "MaSach";
-            this.MaSach.Size = new System.Drawing.Size(143, 22);
+            this.MaSach.Size = new System.Drawing.Size(160, 26);
             this.MaSach.TabIndex = 100;
             // 
             // MaNhap
             // 
-            this.MaNhap.Location = new System.Drawing.Point(302, 80);
+            this.MaNhap.Location = new System.Drawing.Point(340, 100);
+            this.MaNhap.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaNhap.Name = "MaNhap";
-            this.MaNhap.Size = new System.Drawing.Size(143, 22);
+            this.MaNhap.Size = new System.Drawing.Size(160, 26);
             this.MaNhap.TabIndex = 102;
             // 
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.label5.Location = new System.Drawing.Point(140, 81);
+            this.label5.Location = new System.Drawing.Point(158, 101);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(122, 23);
+            this.label5.Size = new System.Drawing.Size(137, 29);
             this.label5.TabIndex = 101;
             this.label5.Text = "Mã nhập";
             // 
             // TrangThai
             // 
-            this.TrangThai.Location = new System.Drawing.Point(302, 273);
+            this.TrangThai.Location = new System.Drawing.Point(340, 341);
+            this.TrangThai.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TrangThai.Name = "TrangThai";
-            this.TrangThai.Size = new System.Drawing.Size(143, 22);
+            this.TrangThai.Size = new System.Drawing.Size(160, 26);
             this.TrangThai.TabIndex = 104;
             // 
             // lbTrangThai
             // 
             this.lbTrangThai.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTrangThai.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.lbTrangThai.Location = new System.Drawing.Point(127, 266);
+            this.lbTrangThai.Location = new System.Drawing.Point(143, 332);
             this.lbTrangThai.Name = "lbTrangThai";
-            this.lbTrangThai.Size = new System.Drawing.Size(135, 23);
+            this.lbTrangThai.Size = new System.Drawing.Size(152, 29);
             this.lbTrangThai.TabIndex = 103;
             this.lbTrangThai.Text = "Trạng thái";
             this.lbTrangThai.Click += new System.EventHandler(this.TrangThai_Click);
             // 
             // Kho
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1004, 629);
+            this.BackColor = System.Drawing.Color.Beige;
+            this.ClientSize = new System.Drawing.Size(1130, 786);
             this.Controls.Add(this.TrangThai);
             this.Controls.Add(this.lbTrangThai);
             this.Controls.Add(this.MaNhap);
@@ -341,8 +358,9 @@ namespace WebBanSach
             this.Controls.Add(this.Label4);
             this.Controls.Add(this.Label3);
             this.Controls.Add(this.Label2);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Kho";
-            this.Text = "Kho";
+            this.Text = "HoaDon";
             ((System.ComponentModel.ISupportInitialize)(this.TableSachNhap)).EndInit();
             this.MenuStrip1.ResumeLayout(false);
             this.MenuStrip1.PerformLayout();

@@ -31,7 +31,6 @@ namespace WebBanSach
         {
             this.MenuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menu1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.PictureBox1 = new System.Windows.Forms.PictureBox();
             this.TableNV = new System.Windows.Forms.DataGridView();
             this.Sua = new System.Windows.Forms.Button();
             this.Button5 = new System.Windows.Forms.Button();
@@ -52,11 +51,12 @@ namespace WebBanSach
             this.Label5 = new System.Windows.Forms.Label();
             this.Label3 = new System.Windows.Forms.Label();
             this.Label2 = new System.Windows.Forms.Label();
+            this.PictureBox1 = new System.Windows.Forms.PictureBox();
             this.MenuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TableNV)).BeginInit();
             this.GBchucVu.SuspendLayout();
             this.GroupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // MenuStrip1
@@ -80,16 +80,6 @@ namespace WebBanSach
             this.menu1.Name = "menu1";
             this.menu1.Size = new System.Drawing.Size(229, 34);
             this.menu1.Text = "Thông tin nhân viên";
-            // 
-            // PictureBox1
-            // 
-            this.PictureBox1.Location = new System.Drawing.Point(205, 141);
-            this.PictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.PictureBox1.Name = "PictureBox1";
-            this.PictureBox1.Size = new System.Drawing.Size(323, 289);
-            this.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PictureBox1.TabIndex = 99;
-            this.PictureBox1.TabStop = false;
             // 
             // TableNV
             // 
@@ -312,10 +302,22 @@ namespace WebBanSach
             this.Label2.TabIndex = 83;
             this.Label2.Text = "QUẢN LÍ NHÂN VIÊN";
             // 
+            // PictureBox1
+            // 
+            this.PictureBox1.Image = global::WebBanSach.Properties.Resources.tải_xuống__8_;
+            this.PictureBox1.Location = new System.Drawing.Point(205, 141);
+            this.PictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.PictureBox1.Name = "PictureBox1";
+            this.PictureBox1.Size = new System.Drawing.Size(323, 289);
+            this.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PictureBox1.TabIndex = 99;
+            this.PictureBox1.TabStop = false;
+            // 
             // NhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Beige;
             this.ClientSize = new System.Drawing.Size(1061, 760);
             this.Controls.Add(this.MenuStrip1);
             this.Controls.Add(this.PictureBox1);
@@ -341,10 +343,10 @@ namespace WebBanSach
             this.Load += new System.EventHandler(this.NhanVien_Load);
             this.MenuStrip1.ResumeLayout(false);
             this.MenuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TableNV)).EndInit();
             this.GBchucVu.ResumeLayout(false);
             this.GroupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

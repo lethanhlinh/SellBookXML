@@ -31,7 +31,7 @@ namespace WebBanSach
         }
         private void LoadAllEmployees()
         {
-            string connString = "Data Source=ADMIN-PC;Initial Catalog=qlSachCuaHang;Integrated Security=True;";
+            string connString = "Data Source=quancutee\\QUANCUTEE;Initial Catalog=qlSachCuaHang;Integrated Security=True;";
             using (SqlConnection conn = new SqlConnection(connString))
             {
                 conn.Open();
@@ -58,7 +58,7 @@ namespace WebBanSach
 
         private void SearchEmployee(string maNV, string tenNV)
         {
-            string connString = "Data Source=ADMIN-PC;Initial Catalog=qlSachCuaHang;Integrated Security=True;";
+            string connString = "Data Source=quancutee\\QUANCUTEE;Initial Catalog=qlSachCuaHang;Integrated Security=True;";
             using (SqlConnection conn = new SqlConnection(connString))
             {
                 conn.Open();

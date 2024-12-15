@@ -21,7 +21,7 @@ namespace WebBanSach
 
         private void LoadAllBooks()
         {
-            string connString = "Data Source=ADMIN-PC;Initial Catalog=qlSachCuaHang;Integrated Security=True;";
+            string connString = "Data Source=quancutee\\QUANCUTEE;Initial Catalog=qlSachCuaHang;Integrated Security=True;";
             using (SqlConnection conn = new SqlConnection(connString))
             {
                 conn.Open();
@@ -60,7 +60,7 @@ namespace WebBanSach
 
         private void SearchBook(string maSach, string tenSach)
         {
-            string connString = "Data Source=ADMIN-PC;Initial Catalog=qlSachCuaHang;Integrated Security=True;";
+            string connString = "Data Source=quancutee\\QUANCUTEE;Initial Catalog=qlSachCuaHang;Integrated Security=True;";
             using (SqlConnection conn = new SqlConnection(connString))
             {
                 conn.Open();
